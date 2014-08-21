@@ -1,0 +1,8 @@
+<div class="post">
+  <h4><%= @job.position_title %></h4>
+  <h5><%= @job.company %></h5>
+  <%= @job.description %></br>
+  <small>Posted <%= time_ago_in_words(@job.created_at) %> ago</small>
+</div>
+
+<%= link_to 'Back', jobs_path %>

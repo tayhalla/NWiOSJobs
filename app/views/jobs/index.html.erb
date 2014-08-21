@@ -1,0 +1,9 @@
+<% @jobs.each do |job| %>
+  <div class="post">
+    <h4><%= job.position_title %></h4>
+    <p class="pull-right"><%= link_to 'Details', job, :class => "btn btn-danger" %></p>
+    <!-- <p class="pull-right"><a href=<%= link_to job %>><span class="glyphicon glyphicon-log-out"></span></a></p> -->
+    <h5><%= job.company %></h5>
+    <small>Posted <%= time_ago_in_words(job.created_at) %> ago</small>
+  </div>
+<% end %>  
