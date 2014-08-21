@@ -1,7 +1,2 @@
-NWiOSJobs
+Jobs for iOS Devs in the Great Northwest
 =========
-
-Coming soon. 
-=========
-
-iOS Jobs in the Great Northwest
