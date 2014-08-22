@@ -1,9 +1,9 @@
 <div class="post">
   <h4><%= @job.position_title %></h4>
   <h5><%= @job.company %></h5>
-  <% @job.description.split("\n").each do |l| %>
-  <p class='job_description'><%= l %></p>
-  <% end %>
+  
+  <%= @renderer.render(@job.description).html_safe %>
+  
   <p class='job_description'>Contact: <%= link_to @job.contact_name, 'mailto:#{@job.contact_name}'%></p></br>
   <small>Posted <%= time_ago_in_words(@job.created_at) %> ago</small>
 </div>

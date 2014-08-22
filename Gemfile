@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.1.2"
+ruby "2.0.0"
 
 gem "airbrake"
 gem "bourbon", "~> 3.2.1"
@@ -24,6 +24,7 @@ gem "uglifier"
 gem "unicorn"
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+gem 'redcarpet'
 
 group :development do
   gem "spring"

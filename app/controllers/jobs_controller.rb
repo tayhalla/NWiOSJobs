@@ -12,6 +12,7 @@ class JobsController < ApplicationController
 
   # GET /jobs/1
   def show
+    @renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   end
 
   # GET /jobs/new
