@@ -1,7 +1,8 @@
 <div class="post">
   <h4><%= @job.position_title %></h4>
   <h5><%= @job.company %></h5>
-  <%= @job.description %></br>
+  <p><%= @job.description %></p></br>
+  <p>Contact: <%= link_to @job.contact_name, 'mailto:#{@job.contact_name}'%></p></br>
   <small>Posted <%= time_ago_in_words(@job.created_at) %> ago</small>
 </div>
 
