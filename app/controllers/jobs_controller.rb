@@ -1,6 +1,10 @@
 class JobsController < ApplicationController
   before_action :set_job, only: [:show, :edit, :update, :destroy]
 
+  def about
+    
+  end
+
   # GET /jobs
   def index
     @jobs = Job.all
